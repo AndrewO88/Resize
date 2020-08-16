@@ -1,0 +1,63 @@
+mwlResizable {
+  box-sizing: border-box;
+}
+div.rectangle.resize-active {
+  cursor: grabbing !important;
+}
+
+.rectangle {
+  position: relative;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 150px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: red;
+}
+.resize-handle-top,
+.resize-handle-bottom {
+  background-color: black;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+}
+.resize-handle-top {
+  top: 0;
+}
+.resize-handle-bottom {
+  bottom: 0;
+}
+.resize-handle-left,
+.resize-handle-right {
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 5px;
+}
+.resize-handle-left {
+  left: 0;
+}
+.resize-handle-right {
+  right: 0;
+}
+.rec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.example-handle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ccc;
+  cursor: move;
+  width: 24px;
+  height: 24px;
+}
+.flex {
+  display: flex;
+  border: 1px black solid;
+}
